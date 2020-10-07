@@ -13,13 +13,14 @@
         android:layout_height="wrap_content"
         android:autofillHints="@string/a"
         android:hint="@string/a"
-        android:inputType="number" />
+        android:inputType="number"
+        android:gravity="center"/>
 
 
     <Spinner
         android:id="@+id/operation"
-        android:layout_width="70dp"
-        android:layout_height="45dp" />
+        android:layout_width="80dp"
+        android:layout_height="60dp" />
 
 
     <EditText
@@ -28,18 +29,21 @@
         android:layout_height="wrap_content"
         android:autofillHints="@string/b"
         android:hint="@string/b"
-        android:inputType="number" />
+        android:inputType="number"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/calcIt"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="@string/calculate" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/calcIt"
-        android:layout_width="wrap_content"
-        android:layout_height="63dp"
-        android:text="@string/calculate" />
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"/>
 
 
 </android.widget.LinearLayout>
