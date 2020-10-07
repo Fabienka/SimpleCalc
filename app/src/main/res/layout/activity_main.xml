@@ -9,37 +9,37 @@
 
     <EditText
         android:id="@+id/firstNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="37dp"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/a"
         android:hint="@string/a"
-        android:inputType="number"
-        android:autofillHints="@string/a" />
+        android:inputType="number" />
+
 
     <Spinner
         android:id="@+id/operation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="70dp"
+        android:layout_height="45dp" />
 
 
     <EditText
         android:id="@+id/secondNumber"
-        android:layout_width="wrap_content"
+        android:layout_width="39dp"
         android:layout_height="wrap_content"
+        android:autofillHints="@string/b"
         android:hint="@string/b"
-        android:inputType="number"
-        android:autofillHints="@string/b" />
-
-
-    <Button
-        android:id="@+id/calcIt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/calculate" />
+        android:inputType="number" />
 
     <TextView
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/calcIt"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:text="@string/calculate" />
 
 
 </android.widget.LinearLayout>

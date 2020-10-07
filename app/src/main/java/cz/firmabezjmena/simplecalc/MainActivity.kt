@@ -1,5 +1,6 @@
 package cz.firmabezjmena.simplecalc
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -32,9 +33,16 @@ class MainActivity : AppCompatActivity() {
                     "x" -> c = (a.toFloat() * b).toString()
                 }
                 result.text = c
-            }
+            } else {
+              val dialog = AlertDialog.Builder(this).setMessage("No input detected!").create()
+                dialog.setTitle("Warning")
+                
+                dialog.show()
+
+          }
 
         }
 
     }
+
 }
