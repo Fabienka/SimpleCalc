@@ -3,4 +3,6 @@
     <string name="b">b</string>
     <string name="a">a</string>
     <string name="calculate">=</string>
+    <string name="warningTitle">Warning</string>
+    <string name="warning_text">No input detected!</string>
 </resources>

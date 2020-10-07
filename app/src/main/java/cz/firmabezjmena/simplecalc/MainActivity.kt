@@ -1,11 +1,14 @@
 package cz.firmabezjmena.simplecalc
 
 import android.app.AlertDialog
+import android.os.Build
 import android.os.Bundle
 import android.widget.*
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,9 +37,8 @@ class MainActivity : AppCompatActivity() {
                 }
                 result.text = c
             } else {
-              val dialog = AlertDialog.Builder(this).setMessage("No input detected!").create()
-                dialog.setTitle("Warning")
-                
+              val dialog = AlertDialog.Builder(this).setView(R.layout.warning_dialog).create()
+
                 dialog.show()
 
           }
